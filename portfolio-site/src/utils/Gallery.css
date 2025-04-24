@@ -1,0 +1,121 @@
+.Gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .Gallery-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    max-height: 75vh;
+    overflow-y: auto;
+    width: 200px;
+    justify-content: right;
+    white-space: nowrap;
+    padding: 0.5rem;
+  }
+  
+  .Gallery-title {
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    margin: 0.2rem 0;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    text-align: right;
+  }
+  
+  .Gallery-title:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .bold {
+    font-weight: bold;
+    background-color: #111;
+    color: white;
+  }
+  
+  .faded-1 {
+    color: #777;
+  }
+  
+  .faded-2 {
+    color: #bbb;
+  }
+  
+  .Arrow-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    transition: color 0.3s;
+    align-self: flex-end;
+    text-align: right;
+    translate: 11vw 0;
+  }
+  
+  .Arrow-button:hover {
+    color: #444;
+  }
+  
+  .Gallery-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 70vh;
+    overflow: hidden;
+    z-index: 1001;
+  }
+  
+  .Gallery-item img {
+    display: block;
+    max-width: 75vw;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+  }
+  
+  .Gallery-item img:hover {
+    transform: scale(1.03);
+  }
+  
+  .Gallery-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 200px;
+    padding-left: 1rem;
+  }
+  
+  .Gallery-categories p {
+    margin: 0;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Gallery-categories .bold {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .Gallery-categories .faded {
+    color: #999;
+  }
+  
+  .Gallery-category {
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+  }
