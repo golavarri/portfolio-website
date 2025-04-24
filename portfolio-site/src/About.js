@@ -19,7 +19,12 @@ const About = () => {
             </div>
             <div className="About-body">
                 <h1>Genna Olavarri</h1>
-                <h2>golavarri@yahoo.com &nbsp;  &#x2022;  &nbsp;  <a href="https://www.linkedin.com/in/genevieve-olavarri/">LinkedIn</a></h2>
+                <h2>golavarri@yahoo.com 
+                    &nbsp;  &#x2022;  &nbsp;  
+                    <a href="https://www.linkedin.com/in/genevieve-olavarri/">LinkedIn</a>
+                    &nbsp;  &#x2022;  &nbsp;
+                    <a href="https://github.com/golavarri">GitHub</a>
+                </h2>
                 <p><b>Genevieve (Genna) Olavarri</b> is a computer science and design and engineering student
                     at Wesleyan University. 
                 </p>
