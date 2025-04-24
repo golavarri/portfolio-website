@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Damascus, sans-serif;
 }
 
 .App-logo {
@@ -13,26 +14,182 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Background {
+  z-index: -1;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  font-size: larger;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2vh 3vw;
+  box-sizing: border-box;
+  pointer-events: none;
+  font-family: Damascus, sans-serif;
+}
+
+.Overlay a {
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.Overlay a:hover {
+  color: purple;
+}
+
+.Design-nav {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: start;
+}
+
+.Other-nav {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+}
+
+.Code-nav {
+  grid-column: 4;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+.Github-link {
+  grid-column: 4;
+  grid-row: 2;
+  align-self: start;
+  justify-self: end;
+  margin-top: 12vh;
+}
+
+.Github-link a {
+  text-decoration: underline;
+  color: gray;
+  pointer-events: auto;
+}
+
+.Github-link a:hover {
+  color: purple;
+}
+
+.About-nav {
+  grid-column: 4;
+  grid-row: 2;
+  align-self: end;
+  justify-self: end;
+}
+
+.Home-nav {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1vh;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 45%;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+.Home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  pointer-events: none;
+}
+
+.Home-button a {
+  text-decoration: none;
+  color: white;
+  pointer-events: auto;
+}
+
+.Home-button a:hover {
+  color: purple;
+}
+
+.Design-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 70vw;
+  margin: 12.5vh 15vw;
+}
+
+.Other-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 70vw;
+  margin: 12.5vh 15vw;
+}
+
+.About-body {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 70vw;
+  margin: 20vh 15vw;
+}
+
+.About-body h1, h2{
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.About-body p {
+  font-family: Menlo, sans-serif;
+  text-align: left;
+}
+
+.About-body hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.Code-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 70vw;
+  margin: 12.5vh 15vw;
 }

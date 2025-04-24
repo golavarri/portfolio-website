@@ -1,0 +1,97 @@
+.Project-page {
+    display: flex;
+    height: 75vh;
+    width: 75vw;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    position: relative;
+    margin-left: 9vw;
+  }
+  
+  .Project-header {
+    flex: 0 0 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Project-name {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 18vh;
+    margin-left: 7vw;
+  }
+  
+  .Project-body {
+    flex: 0 0 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25vh;
+  }
+  
+  .Project-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+  }
+  
+  .Back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .Project-description {
+    font-family: Menlo, sans-serif;
+    font-size: 1rem;
+    max-width: 60vw;
+    margin: 17vh auto 10vh auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .Project-categories {
+    flex: 0 0 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    height: 70vh;
+    margin-top: 25vh;
+    pointer-events: auto;
+    cursor: default;
+  }
+
+  .Arrow {
+    z-index: 100;
+    position: absolute;
+    width: 30%;
+    bottom: -7vw;
+  }
+
+  .Arrow.left {
+    left: 5vw;
+  }
+
+  .Arrow.right {
+    right: -2.5vw;
+  }
