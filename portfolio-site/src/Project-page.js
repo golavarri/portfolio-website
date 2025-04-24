@@ -135,6 +135,7 @@ const ProjectPage = () => {
                         <img
                         src={images[currentIndex].src}
                         alt={images[currentIndex].alt}
+                        loading="lazy"
                         />
                     </motion.div>
                     </AnimatePresence>
