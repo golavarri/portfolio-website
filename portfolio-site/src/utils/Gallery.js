@@ -127,6 +127,7 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
               <img
                 src={images[currentIndex].src}
                 alt={images[currentIndex].alt}
+                loading="eager"
               />
             </motion.a>
           </AnimatePresence>
