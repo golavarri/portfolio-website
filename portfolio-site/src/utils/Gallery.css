@@ -51,14 +51,23 @@
   .Arrow-button {
     background: none;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
     padding: 0.3rem;
     margin: 0.3rem;
     transition: color 0.3s;
     align-self: flex-end;
     text-align: right;
-    translate: 11vw 0;
+    translate: 6.5vw 0;
+  }
+
+  .Arrow-button.up {
+    scale: 0.17;
+    transform: translateY(200%);
+  }
+
+  .Arrow-button.down {
+    scale: 0.17;
+    transform: translateY(-200%);
   }
   
   .Arrow-button:hover {

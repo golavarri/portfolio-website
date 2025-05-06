@@ -54,6 +54,14 @@ const images = [
         caption: "ideas",
         title: "User Responsive Lamp",
         link: "/projects/eye-lamp"
+    },
+    {
+        id: 8,
+        src: "/images/design/golf_tee/golftee1.png",
+        alt: "A sketch of a golf tee overlaid on a mushroom image",
+        caption: "ideas",
+        title: "Mycelium Golf Tee",
+        link: "/projects/golf_tee"
     }
 ];
 
