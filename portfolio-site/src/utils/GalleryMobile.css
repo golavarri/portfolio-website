@@ -2,14 +2,12 @@
     width: auto;
     height: 60vh !important;
     max-width: 80vw !important;
-    border-radius: 10px;
     overflow: hidden;
     display: flex;
-    justify-self: center;
-    align-self: center;
     padding-bottom: 0;
     padding-top: 0;
     z-index: 1;
+    transform: translateX(16%);
 }
   
 .Gallery-item-m img {
@@ -103,6 +101,8 @@
     align-items: center;
     gap: 0.3rem;
     z-index: 1000;
+    color: black;
+    text-decoration: none;
 }
 
 .Dropdown-arrow {
