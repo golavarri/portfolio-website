@@ -125,7 +125,7 @@ const ProjectPage = () => {
                     <button className="Back-button-m" onClick={() => window.history.back()}>
                         &#x2715;
                     </button>
-                    <div className="Project-images">
+                    <div className="Project-images-m">
                         <AnimatePresence mode="wait">
                         <motion.div
                             key={currentIndex}

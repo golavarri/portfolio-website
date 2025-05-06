@@ -15,7 +15,7 @@
 .Gallery-item-m img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     padding-bottom: 0;
 }
 
