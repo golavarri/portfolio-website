@@ -45,15 +45,16 @@
   
   .Back-button {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: white solid 2px;
+    top: 20px;
+    left: 20px;
     font-size: 2rem;
+    background: transparent;
+    border: none;
     cursor: pointer;
+    mix-blend-mode: exclusion;
+    color: white;
     z-index: 10;
+    padding: 0;
   }
   
   .Project-description {

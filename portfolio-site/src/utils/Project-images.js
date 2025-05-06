@@ -420,6 +420,89 @@ const phishing = [
     }
 ]
 
+const golf_tee = [
+    {
+        src: "/images/design/golf_tee/golftee1.png",
+        alt: "A sketch of a golf tee overlaid on a mushroom image",
+        category: "Sketches"
+    },
+    {
+        src: "/images/design/golf_tee/golftee16.png",
+        alt: "A sketch of the golf tee design with a skewer for support",
+        category: "Sketches"
+    },
+    {
+        src: "/images/design/golf_tee/golftee2.jpg",
+        alt: "A clay model of a golf tee",
+        category: "Clay model"
+    },
+    {
+        src: "/images/design/golf_tee/golftee3.jpg",
+        alt: "A clay model of a golf tee",
+        category: "Clay model"
+    },
+    {
+        src: "/images/design/golf_tee/golftee4.jpg",
+        alt: "The 3D model of the mold for growing the mycelium in",
+        category: "Mold"
+    },
+    {
+        src: "/images/design/golf_tee/golftee5.jpg",
+        alt: "The 3D model of the mold for growing the mycelium in",
+        category: "Mold"
+    },
+    {
+        src: "/images/design/golf_tee/golftee6.jpeg",
+        alt: "The 3D model of the mold for growing the mycelium in",
+        category: "Mold"
+    },
+    {
+        src: "/images/design/golf_tee/golftee7.png",
+        alt: "Progress photos of the mycelium growth",
+        category: "First prototype"
+    },
+    {
+        src: "/images/design/golf_tee/golftee8.jpeg",
+        alt: "Progress photos of the mycelium growth",
+        category: "First prototype"
+    },
+    {
+        src: "/images/design/golf_tee/golftee9.jpeg",
+        alt: "Progress photos of the mycelium growth",
+        category: "First prototype"
+    },
+    {
+        src: "/images/design/golf_tee/golftee10.png",
+        alt: "Progress photos of the mycelium growth",
+        category: "First prototype"
+    },
+    {
+        src: "/images/design/golf_tee/golftee11.png",
+        alt: "3D model of the golf tee",
+        category: "Redesign"
+    },
+    {
+        src: "/images/design/golf_tee/golftee12.png",
+        alt: "3D model of the golf tee",
+        category: "Redesign"
+    },
+    {
+        src: "/images/design/golf_tee/golftee13.png",
+        alt: "3D model of the golf tee",
+        category: "Redesign"
+    },
+    {
+        src: "/images/design/golf_tee/golftee14.png",
+        alt: "Progress photos of the mycelium growth",
+        category: "Second prototype"
+    },
+    {
+        src: "/images/design/golf_tee/golftee15.png",
+        alt: "Progress photos of the mycelium growth",
+        category: "Second prototype"
+    }
+]
+
 const project_descriptions = {
     box: {
         title: "CNC Box",
@@ -535,6 +618,24 @@ const project_descriptions = {
              filters the eye image data captured in the image and converts the colors to that which can be displayed by standard 
              RGB LEDs. The color data is then displayed by the LED sculpture. 
         `
+    },
+    golf_tee: {
+        title: "Mycelium Golf Tee",
+        description:
+            `
+            In a biodegradable design course, I created a mycelium-based golf tee as an exploration of the functional applications 
+            of growing mycelium, the root system of mushrooms, through a process of compression. I initially got the idea for this 
+            project from talking to my dad – an avid golfer. I was excited by the idea of finding ways to make a non-eco friendly 
+            yet overwhelmingly popular activity like golf more sustainable.
+
+            I modeled an initial tee design in Rhino and took the boolean difference with a rectangle to create a mold for the 
+            mycelium to grow in. I 3D printed the design in corn PLA. I grew several prototypes of the design over the span of a 
+            semester and went through various redesign iterations. Throughout this process, I learned a lot about the notion of 
+            designing versus engineering a product. With my initial designs, I was considering how a golf tee looks and how I 
+            could recreate that. But as I continued to iterate, I began to consider how the fairly simple form of the golf tee 
+            needs to work and how to recreate that functionality given the material constraints of working with an organic 
+            material like mycelium.
+            `
     }
 }
 
@@ -560,6 +661,8 @@ const projectImages = ({ projectName }) => {
             return { images: soda_lamp, description: project_descriptions.soda_lamp };
         case "phishing":
             return { images: phishing, description: project_descriptions.phishing };
+        case "golf_tee":
+            return { images: golf_tee, description: project_descriptions.golf_tee };
         default:
             return { images: undefined, description: undefined };
     }

@@ -83,7 +83,7 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
             className="Arrow-button up"
             aria-label="Up"
           >
-            ▲
+            <img src="/images/up.png" alt="Up arrow" />
           </button>
 
           <div className="Gallery-titles" ref={titlesRef}>
@@ -106,7 +106,7 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
             className="Arrow-button down"
             aria-label="Down"
           >
-            ▼
+            <img src="/images/down.png" alt="Down arrow" />
           </button>
         </div>
 
