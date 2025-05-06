@@ -101,7 +101,6 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
               </div>
             ))}
           </div>
-
           <button
             onClick={() => handleTitleNavigation("down")}
             className="Arrow-button down"
