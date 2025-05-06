@@ -11,31 +11,19 @@
 // React imports
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 // Local imports
-import Splash from './Splash.js';
-import Design from './Design.js';
-import About from './About.js';
-import Code from './Code.js';
-import Other from './Other.js';
-import ProjectPage from './Project-page.js';
+import MobileLayout from './utils/layout/Mobile-layout';
+import DesktopLayout from './utils/layout/Desktop-layout';
+
 
 /*--------------------------------------------------------------------------------------------------*/
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Splash />} />
-        <Route path="/design" element={<Design />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/code" element={<Code />} />
-        <Route path="/other" element={<Other />} />
-        <Route path="/projects/:projectName" element={<ProjectPage />} />
-      </Routes>
-    </Router>
-  );
+
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  return isMobile ? <MobileLayout /> : <DesktopLayout />
 }
 
 export default App;

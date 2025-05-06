@@ -1,7 +1,8 @@
 
+
 import React, { useState, useEffect } from 'react';
-import './utils/Project-page.css';
-import ProjectImages from './utils/Project-images';
+import '../utils/Project-page.css';
+import ProjectImages from '../utils/Project-images';
 import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectPage = () => {
