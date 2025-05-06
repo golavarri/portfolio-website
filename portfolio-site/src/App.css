@@ -175,6 +175,11 @@
   padding-bottom: 5%;
 }
 
+.About-body h2 a {
+  text-decoration: none;
+  color: purple;
+}
+
 .About-body p {
   font-family: Menlo, sans-serif;
   text-align: left;

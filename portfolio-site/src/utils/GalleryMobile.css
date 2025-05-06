@@ -1,0 +1,145 @@
+.Gallery-item-m {
+    width: auto;
+    height: 60vh !important;
+    max-width: 80vw !important;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 1;
+}
+  
+.Gallery-item-m img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    padding-bottom: 0;
+}
+
+.Gallery-title-container-m {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding-left: 0;
+}
+  
+.Gallery-title-m {
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 60vw; /* or narrower if preferred */
+    margin: 0 auto;
+    padding: 0;
+    transform: translateY(-50%);
+}
+
+  
+.Arrow-button-m.left {
+    position: absolute;
+    left: 5%;
+    z-index: 100;
+}
+
+.Arrow-button-m.right {
+    position: absolute;
+    right: 5%;
+    z-index: 100;
+}
+
+.Arrow-button-m {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 5%;
+}
+
+
+.Arrow-icon {
+    width: 12rem;
+    height: auto;
+}
+
+.Gallery-categories-m {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.1rem;
+    z-index: 100;
+}
+
+.Current-category-m {
+    font-weight: bold;
+    font-family: Menlo, sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+.Category-toggle {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+
+.Current-category-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    z-index: 1000;
+}
+
+.Dropdown-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.2s;
+}
+
+.Category-dropdown {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0;
+    list-style: none;
+    margin: 0.2rem 0 0 0;
+    width: max-content;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transform: translateX(-50%);
+}
+
+.Category-dropdown li {
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: Menlo, sans-serif;
+}
+
+.Category-dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+.active-category {
+    font-weight: bold;
+}
+
+
+  
+  
+  

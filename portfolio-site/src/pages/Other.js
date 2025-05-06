@@ -1,8 +1,8 @@
 import React from "react";
-import images from "./utils/Other-images";
+import images from "../utils/Other-images";
 
-import "./App.css";
-import Gallery from "./utils/Gallery";
+import "../App.css";
+import Gallery from "../utils/Gallery";
 
 const Other = () => {
     return (

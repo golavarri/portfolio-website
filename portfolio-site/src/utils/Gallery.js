@@ -77,7 +77,6 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
 
   return (
     <div className="Gallery">
-        {/* Title List */}
         <div className="Gallery-titles-wrapper">
           <button
             onClick={() => handleTitleNavigation("up")}
