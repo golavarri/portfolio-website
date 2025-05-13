@@ -1,9 +1,9 @@
 
 .Large-image {
 
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
+    height: auto;
+    width: 100vw;
+    overflow: scroll;
 }
 
 .Back-to-other {
@@ -21,4 +21,6 @@
   color: white;
   mix-blend-mode: exclusion;
   font-size: 4em;
+  cursor: pointer;
+  pointer-events: all;
 }
