@@ -121,6 +121,20 @@ const ProjectPage = () => {
                     )}
                     </div>
                 )}
+                <img
+                    onClick={() => handleImageNavigation("left")}
+                    className="Arrow-p left"
+                    aria-label="Left"
+                    src="/images/leftarrow.png"
+                    alt="Left Arrow"
+                />
+                <img
+                    onClick={() => handleImageNavigation("right")}
+                    className="Arrow-p right"
+                    aria-label="Right"
+                    src="/images/rightarrow.png"
+                    alt="Right Arrow"
+                />
                 <div className="Project-content">
                     <button className="Back-button-m" onClick={() => window.history.back()}>
                         &#x2715;
@@ -157,20 +171,6 @@ const ProjectPage = () => {
                         </AnimatePresence>
                     </div>
                 </div>
-                <img
-                    onClick={() => handleImageNavigation("left")}
-                    className="Arrow-p left"
-                    aria-label="Left"
-                    src="/images/leftarrow.png"
-                    alt="Left Arrow"
-                />
-                <img
-                    onClick={() => handleImageNavigation("right")}
-                    className="Arrow-p right"
-                    aria-label="Right"
-                    src="/images/rightarrow.png"
-                    alt="Right Arrow"
-                />
         </div>
         <div className="Project-info-m">
             <div className="Project-description-m">
