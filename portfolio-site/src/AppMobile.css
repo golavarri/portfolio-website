@@ -249,7 +249,7 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0.1rem;
+    margin-bottom: 1.5rem;
     z-index: 100;
 }
 
@@ -271,6 +271,7 @@
     align-items: center;
     justify-content: center;
     height: 5vh;
+    color: black;
 }
 
 .Current-category-wrapper-p {
@@ -353,7 +354,7 @@
 
 .Project-info-m {
     width: 80vw !important;
-    margin-top: 8em;
+    margin-top: 3em;
     font-family: Menlo, sans-serif;
     font-size: 0.8em;
     line-height: 1.75em;

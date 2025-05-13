@@ -1,0 +1,45 @@
+/* Full page scrollable container */
+.Art-popup-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5%;
+    position: relative;
+    flex-direction: column;
+    overflow-y: auto;
+    box-sizing: border-box;
+    transform: translateX(-4%);
+  }
+  
+  /* Sticky back button */
+  .Back-to-other-m {
+    position: sticky;
+    align-self: flex-start;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: translateY(-100%);
+    left: 6vw;
+
+  }
+  
+  /* Container for the image */
+  .Large-image-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Responsive image */
+  .Art-image-m {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  
