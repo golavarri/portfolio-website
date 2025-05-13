@@ -20,13 +20,13 @@ const About = () => {
         >
             <div className="About-page">
                 <div className="Overlay">
-                    <h1 className="Design-nav"><a href="/design" style={{color: "black"}}>design</a></h1>
-                    <h1 className="About-nav"><a href="/about" style={{color: "purple"}}>about</a></h1>
-                    <h1 className="Code-nav"><a href="/code" style={{color: "black"}}>code</a></h1>
-                    <h1 className="Other-nav"><a href="/other" style={{color: "black"}}>other</a></h1>
+                    <h1 className="Design-nav"><a href="/design" style={{color: "white"}}>design</a></h1>
+                    <h1 className="About-nav"><a href="/about" style={{color: "white"}}>about</a></h1>
+                    <h1 className="Code-nav"><a href="/code" style={{color: "white"}}>code</a></h1>
+                    <h1 className="Other-nav"><a href="/other" style={{color: "white"}}>other</a></h1>
                     <a href="/">
                         <img className="Home-nav" 
-                            src="/images/GO.png" 
+                            src="/images/GO(white).png" 
                             alt="Home" 
                         />
                     </a>
@@ -56,6 +56,12 @@ const About = () => {
                         and digital fabrication techniques and their potential as interdisciplinary applications 
                         of technology and art. 
                     </p>
+                </div>
+                <div className="Portrait">
+                    <img
+                        src="/images/portrait1.JPG"
+                        alt="Genna Olavarri"
+                    />
                 </div>
             </div>
         </motion.div>

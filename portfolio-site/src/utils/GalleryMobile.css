@@ -1,25 +1,28 @@
 .Mobile-Gallery {
     overflow: hidden;
+    height: 70vh;
 }
 
 .Gallery-item-m {
     width: auto;
-    height: 55vh !important;
+    height: 45vh !important;
     max-width: 80vw !important;
     overflow: hidden;
     display: flex;
     padding-bottom: 1vh;
     padding-top: 5vh;
     z-index: 1;
-    justify-self: center;
-    align-self: center;
+    transform: translateX(12.5%);
+    align-items: center;
+    margin-top: 5vh;
 }
   
 .Gallery-item-m img {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
+    height: auto;
+    object-fit:contain !important;
     padding-bottom: 0;
+    background-size: contain;
 }
 
 .Gallery-title-container-m {
@@ -84,7 +87,7 @@
     font-family: Menlo, sans-serif;
     white-space: nowrap;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
