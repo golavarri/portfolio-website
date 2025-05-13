@@ -54,14 +54,15 @@ const About = () => {
                     <hr />
 
                     <p>
-                        Genna is an interdisciplinary computer scientist and designer, compelled by the problem 
-                        solving at the core of both practices. In developing programming projects, she is captivated 
-                        by the process of piecing together analytic solutions to complex challenges. She is likewise 
-                        attracted to exploratory practices through various art and design mediums. Genna is constantly 
-                        adding to her hard skills through puzzling together unfamiliar methods and tools to develop 
-                        projects that push her technical, fabrication, and design capabilities. Genna is particularly 
-                        curious about digital art forms, front-end user interface design, and digital fabrication 
-                        techniques as possible interdisciplinary applications of technology and art. 
+                        Genna is an interdisciplinary computer scientist and designer compelled by the 
+                        problem-solving at the core of both practices. In developing programming projects
+                        she is drawn to the process of piecing together analytic solutions to complex challenges. 
+                        She is likewise attracted to exploratory practices through various art and design mediums. 
+                        She constantly adds to her hard skills through puzzling together unfamiliar methods and 
+                        tools to develop projects that push her technical, fabrication, and design capabilities. 
+                        Genna is particularly curious about digital art forms, front-end user interface design, 
+                        and digital fabrication techniques and their potential as interdisciplinary applications 
+                        of technology and art. 
                     </p>
                 </div>
             </div>

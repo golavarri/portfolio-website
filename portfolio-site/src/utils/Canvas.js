@@ -10,6 +10,7 @@ const Canvas = () => {
   const [buttonTransform, setButtonTransform] = useState('translate(-50%, -50%)');
   const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
+  /*
   const drawGrid = useCallback((ctx) => {
     const gridSize = 50;
     const { width, height } = ctx.canvas;
@@ -35,15 +36,15 @@ const Canvas = () => {
 
     ctx.stroke();
   }, [offset, scale]);
+  */
 
   const draw = useCallback((ctx) => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     ctx.save();
     ctx.translate(offset.x, offset.y);
     ctx.scale(scale, scale);
-    drawGrid(ctx);
     ctx.restore();
-  }, [offset, scale, drawGrid]);
+  }, [offset, scale]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
