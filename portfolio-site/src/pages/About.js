@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import "../App.css";
+import Footer from "../utils/Footer";
 
 const pageVariants = {
     initial: { opacity: 0, y: 0 },
@@ -64,6 +65,7 @@ const About = () => {
                     />
                 </div>
             </div>
+            <Footer />
         </motion.div>
     )
 }
