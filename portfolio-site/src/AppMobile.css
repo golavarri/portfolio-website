@@ -325,13 +325,13 @@
 .Arrow-p.left {
     position: absolute;
     left: 5%;
-    z-index: 100;
+    z-index: 1;
 }
 
 .Arrow-p.right {
     position: absolute;
     right: 5%;
-    z-index: 100;
+    z-index: 1;
 }
 
 .Arrow-p {
@@ -341,7 +341,7 @@
     height: auto;
     cursor: pointer;
     padding-top: 5%;
-    transform: translateY(-30%);
+    transform: translateY(-25%);
 }
 
 .Back-button-m {
