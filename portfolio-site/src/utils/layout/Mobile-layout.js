@@ -11,6 +11,7 @@ import Code from '../../pages/mobile/CodeMobile.js';
 import Other from '../../pages/mobile/OtherMobile.js';
 import ProjectPage from '../../pages/mobile/ProjectPageMobile.js';
 import ArtPage from '../../pages/mobile/ArtPageMobile.js';
+import Footer from '../../utils/Footer.js';
 
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -26,6 +27,7 @@ function MobileLayout() {
         <Route path="/projects/:projectName" element={<ProjectPage />} />
         <Route path="/art/:projectName" element={<ArtPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

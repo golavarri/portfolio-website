@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../utils/Project-page.css';
 import ProjectImages from '../utils/Project-images';
 import { motion, AnimatePresence } from "framer-motion";
+import Footer from '../utils/Footer';
 
 const ProjectPage = () => {
 
@@ -207,6 +208,7 @@ const ProjectPage = () => {
             </div>
             ))}
         </div>
+        <Footer />
         </div>
         )
 };

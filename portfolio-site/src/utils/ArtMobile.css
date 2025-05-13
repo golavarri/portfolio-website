@@ -23,7 +23,7 @@
     cursor: pointer;
     transform: translateY(-100%);
     left: 6vw;
-
+    color: black;
   }
   
   /* Container for the image */
