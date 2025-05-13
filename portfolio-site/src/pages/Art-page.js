@@ -61,11 +61,11 @@ const ArtPage = () => {
                             other
                         </a>
                     </h1>
-                </div>
-                <div className="Large-image">
                     <button className="Back-to-other" onClick={() => window.history.back()}>
                         &#x2715;
                     </button>
+                </div>
+                <div className="Large-image">
                     {images.map((image) => {
                         if (image.name === projectName) {
                             return (

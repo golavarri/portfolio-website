@@ -65,7 +65,7 @@
     font-family: Menlo, sans-serif;
     font-size: 1rem;
     max-width: 60vw;
-    margin: 17vh auto 10vh auto;
+    margin: 17vh auto 0 auto;
     text-align: left;
     line-height: 1.6;
   }
@@ -99,6 +99,7 @@
   .Arrow.right {
     right: -2.5vw;
   }
+
 .Large-image {
   display: flex;
   justify-content: center;
