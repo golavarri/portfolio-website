@@ -181,7 +181,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-    margin-top: -0.8em;
+    margin-top: -1.3em;
     background-color: transparent;
 }
 
@@ -189,6 +189,7 @@
     font-size: 2.6em;
     text-align: center;
     color: purple;
+    margin-bottom: 0.4em;
 }
 
 .Github {
@@ -257,6 +258,7 @@
     font-family: Menlo, sans-serif;
     white-space: nowrap;
     text-align: center;
+    font-size: 1.2em;
 }
 
 

@@ -129,12 +129,25 @@ const ProjectPage = () => {
                         <AnimatePresence mode="wait">
                         <motion.div
                             key={currentIndex}
+                            href={images[currentIndex].link}
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
                             transition={{ duration: 0.6 }}
                             className="block"
-                        >
+                            drag="x"
+                            dragConstraints={{ left: 0, right: 0 }}
+                            onDragEnd={(event, info) => {
+                                if (Math.abs(info.offset.x) > 50) {
+                                if (info.offset.x < 0) {
+                                    // Swiped left → go to next image
+                                    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+                                } else {
+                                    // Swiped right → go to previous image
+                                    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+                                }
+                                }
+                            }}>
                             <img
                             src={images[currentIndex].src}
                             alt={images[currentIndex].alt}
