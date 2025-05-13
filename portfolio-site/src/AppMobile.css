@@ -182,6 +182,7 @@
     align-items: center;
     justify-content: center;
     margin-top: -0.8em;
+    background-color: transparent;
 }
 
 .Body-content h1 {

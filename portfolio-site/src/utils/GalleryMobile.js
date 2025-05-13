@@ -72,6 +72,30 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
                 )}
                 </div>
             )}
+            <div className="Button-container-m">
+                <button
+                    onClick={() => handleTitleNavigation("left")}
+                    className="Arrow-button-m left"
+                    aria-label="Left"
+                >
+                    <img 
+                        src="/images/leftarrow.png"
+                        alt="Left Arrow"
+                        className="Arrow-icon"
+                    />
+                </button>
+                <button
+                        onClick={() => handleTitleNavigation("right")}
+                        className="Arrow-button-m right"
+                        aria-label="Right"
+                    >
+                        <img 
+                            src="/images/rightarrow.png"
+                            alt="Right Arrow"
+                            className="Arrow-icon"
+                        />
+                    </button>
+            </div>
             <div className="Gallery-item-m">
                 <AnimatePresence mode="wait">
                     <motion.a
@@ -92,31 +116,9 @@ const Gallery = ({ images, categories, pauseDuration = 750 }) => {
                 </AnimatePresence>
             </div>
             <div className="Gallery-title-container-m">
-                <button
-                    onClick={() => handleTitleNavigation("left")}
-                    className="Arrow-button-m left"
-                    aria-label="Left"
-                >
-                    <img 
-                        src="/images/leftarrow.png"
-                        alt="Left Arrow"
-                        className="Arrow-icon"
-                    />
-                </button>
                 <div className="Gallery-title-m">
                     <h2> { images[currentIndex].title } </h2>
                 </div>
-                <button
-                    onClick={() => handleTitleNavigation("right")}
-                    className="Arrow-button-m right"
-                    aria-label="Right"
-                >
-                    <img 
-                        src="/images/rightarrow.png"
-                        alt="Right Arrow"
-                        className="Arrow-icon"
-                    />
-                </button>
             </div>
         </div>
     );

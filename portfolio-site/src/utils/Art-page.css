@@ -1,0 +1,24 @@
+
+.Large-image {
+
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+}
+
+.Back-to-other {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+  text-align: center;
+  padding-top: 1vh;
+  height: auto;
+  position: absolute;
+  top: 2vh;
+  background-color: transparent;
+  border: none;
+  color: white;
+  mix-blend-mode: exclusion;
+  font-size: 4em;
+}

@@ -1,13 +1,18 @@
+.Mobile-Gallery {
+    overflow: hidden;
+}
+
 .Gallery-item-m {
     width: auto;
-    height: 60vh !important;
+    height: 55vh !important;
     max-width: 80vw !important;
     overflow: hidden;
     display: flex;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 1vh;
+    padding-top: 5vh;
     z-index: 1;
-    transform: translateX(14%);
+    justify-self: center;
+    align-self: center;
 }
   
 .Gallery-item-m img {
@@ -40,13 +45,13 @@
 .Arrow-button-m.left {
     position: absolute;
     left: 5%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .Arrow-button-m.right {
     position: absolute;
     right: 5%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .Arrow-button-m {
@@ -54,7 +59,7 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    padding-top: 5%;
+    transform: translateY(-40%);
 }
 
 
@@ -65,20 +70,21 @@
 
 .Gallery-categories-m {
     position: relative;
-    left: 50%;
-    transform: translate(-50%, -25%);
     display: inline-block;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
     padding-bottom: 0.1rem;
     z-index: 100;
+    margin-left: 50%;
+    transform: translateY(-25%);
 }
 
 .Current-category-m {
-    font-weight: bold;
+    font-weight:normal;
     font-family: Menlo, sans-serif;
     white-space: nowrap;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 

@@ -37,6 +37,7 @@
   box-sizing: border-box;
   pointer-events: none;
   font-family: Damascus, sans-serif;
+  mix-blend-mode: difference;
 }
 
 .Overlay a {
@@ -102,11 +103,12 @@
   text-align: center;
   font-size: 1.5em;
   padding-top: 1vh;
-  width: 80px;
-  height: 80px;
+  width: 3.5em;
+  height: auto;
   position: absolute;
-  top: 0;
+  top: 0.5vh;
   right: 45%;
+  z-index: 9999;
 }
 
 .Home {
@@ -117,39 +119,14 @@
   position: fixed;
 }
 
-.Home-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 95px;
-  width: 95px;
-  border-radius: 50%;
-  background-color: black;
-  color: white;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  position: relative;
-  pointer-events: none;
-}
-
-.Home-button a {
-  text-decoration: none;
-  color: white;
-  pointer-events: auto;
-}
-
-.Home-button a:hover {
-  color: purple;
-}
-
 .Design-body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 75vh;
-  width: 70vw;
-  margin: 12.5vh 15vw;
+  width: 85vw;
+  margin: 12.5vh 7vw;
+  overflow: hidden;
 }
 
 .Other-body {
@@ -157,8 +134,9 @@
   align-items: center;
   justify-content: center;
   height: 75vh;
-  width: 70vw;
-  margin: 12.5vh 15vw;
+  width: 80vw;
+  margin: 12.5vh 10vw;
+  overflow: hidden;
 }
 
 .About-body {
@@ -195,6 +173,7 @@
   align-items: center;
   justify-content: center;
   height: 75vh;
-  width: 70vw;
-  margin: 12.5vh 15vw;
+  width: 85vw;
+  margin: 12.5vh 7.5vw;
+  overflow: hidden;
 }

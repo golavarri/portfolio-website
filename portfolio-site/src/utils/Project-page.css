@@ -1,3 +1,7 @@
+.Projects {
+  background-color: white;
+}
+
 .Project-page {
     display: flex;
     height: 75vh;
@@ -95,3 +99,31 @@
   .Arrow.right {
     right: -2.5vw;
   }
+.Large-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.Large-image img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.Back-to-top {
+  position: sticky;
+  top: 60vh;
+  left: 91vw;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 10;
+  cursor: pointer;
+  margin: 1rem;
+  display: flex;
+  mix-blend-mode: exclusion;
+  width: 5rem;
+}

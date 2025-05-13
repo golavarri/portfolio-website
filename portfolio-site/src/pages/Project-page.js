@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../utils/Project-page.css';
 import ProjectImages from '../utils/Project-images';
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,6 +9,7 @@ const ProjectPage = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
+    const targetRef = useRef(null);
 
     const pauseDuration = 750;
     
@@ -87,27 +88,48 @@ const ProjectPage = () => {
         }
     };
 
+    const scrollToDiv = () => {
+        targetRef.current?.scrollIntoView({ behavior: 'smooth' });
+      };
+
     return (
         <div className="Projects">
         <div className="Project-page">
             <div className="Overlay">
-            <h1 className="Design-nav"><a href="/design" style={{color: "black"}}>design</a></h1>
-            <h1 className="About-nav"><a href="/about" style={{color: "black"}}>about</a></h1>
-            <h1 className="Code-nav"><a href="/code" style={{color: "black"}}>code</a></h1>
-            <h1 className="Other-nav"><a href="/other" style={{color: "black"}}>other</a></h1>
-            <a href="/">
-                <img className="Home-nav" 
-                 src="/images/GO.png" 
-                 alt="Home" 
-                 style={{
-                    width: "80px",
-                    height: "80px",
-                    position: "absolute",
-                    top: "0",
-                    right: "45%"
-                 }}
-                />
-            </a>
+                <h1 className="Design-nav">
+                    <a href="/design" 
+                        style={{color: "white"}}
+                    >
+                        design
+                    </a>
+                </h1>
+                <h1 className="About-nav">
+                    <a href="/about" 
+                        style={{color: "white"}}
+                        >
+                        about
+                    </a>
+                </h1>
+                <h1 className="Code-nav">
+                    <a href="/code" 
+                        style={{color: "white"}}
+                        >
+                        code
+                    </a>
+                </h1>
+                <h1 className="Other-nav">
+                    <a href="/other" 
+                        style={{color: "white"}}
+                        >
+                        other
+                    </a>
+                </h1>
+                <a href="/">
+                    <img className="Home-nav" 
+                    src="/images/GO(white).png" 
+                    alt="Home" 
+                    />
+                </a>
             </div>
             <motion.div className="Project-header" layoutId="project-title">
             <h1 className="Project-name">{image_info.title}</h1>
@@ -119,7 +141,7 @@ const ProjectPage = () => {
                 src="/images/leftarrow.png"
                 alt="Left Arrow"
             />
-            <div className="Project-body">
+            <div className="Project-body" ref={targetRef}>
                 <button className="Back-button" onClick={() => window.history.back()}>
                     &#x2715;
                 </button>
@@ -169,6 +191,21 @@ const ProjectPage = () => {
             <div className="Project-description">
             <p>{image_info.description}</p>
             </div>
+        </div>
+        <div className="Large-image-gallery">
+            <img className="Back-to-top" onClick={scrollToDiv}
+                src="/images/backtotop.png"
+                alt="Up arrow"
+            />
+            {images.map((image, index) => (
+            <div key={index} className="Large-image">
+                <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                />
+            </div>
+            ))}
         </div>
         </div>
         )
